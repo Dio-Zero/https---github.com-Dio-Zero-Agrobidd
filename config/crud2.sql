@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 08-11-2023 a las 11:56:07
+-- Tiempo de generación: 08-11-2023 a las 11:59:36
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `lotes` (
   `precio` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id_lote`),
   KEY `id_producto` (`id_producto`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `lotes`
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `precio` decimal(10,2) NOT NULL,
   `cantidad` int NOT NULL,
   PRIMARY KEY (`id_producto`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `remates` (
   `descripcion` varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_lote` int NOT NULL,
   PRIMARY KEY (`id_remate`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `remates`
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `contrasena` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `telefono` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
